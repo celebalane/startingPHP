@@ -12,4 +12,7 @@ a {
 article {
   background-color: #C6C8C8;
   margin-bottom: 3%;
-  padding: 2%; }
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; }

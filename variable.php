@@ -60,6 +60,16 @@
 					echo 'Bonjour '.$nom.', comment vas-tu?';
 				?>
 			</article>
+			<article>
+				<?php
+					//Exo 7
+					$nom = 'Leterme';
+					$prenom= 'Emilie';
+					$age = 30;
+
+					echo 'Bonjour '.$nom.' '.$prenom.', tu as '.$age.' ans.<br>';
+				?>
+			</article>
 		</section>
 	</body>
 </html>
