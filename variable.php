@@ -70,6 +70,14 @@
 					echo 'Bonjour '.$nom.' '.$prenom.', tu as '.$age.' ans.<br>';
 				?>
 			</article>
+			<article>
+				<?php
+					$addition = 3+4;
+					$multi = 5*20;
+					$division = 45/5;
+					echo 'Résultats :<br>'.$addition.'<br>'.$multi.'<br>'.$division.'<br>';
+				?>
+			</article>
 		</section>
 	</body>
 </html>
