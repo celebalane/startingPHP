@@ -25,4 +25,13 @@ $poids = 4.5;
 $male = true;
 echo $animal.' '.$mois.' '.$poids.' '.$male.'<br>';
 
+//Exo 5
+
+$nombre;
+echo $nombre;
+$nombre = 2;
+echo $nombre.'<br>';
+
+
+
 ?>
