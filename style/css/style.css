@@ -1,2 +1,15 @@
 body {
-  background-color: #E3F7F0; }
+  background-color: #E3F7F0;
+  color: #444A48; }
+
+h1 {
+  color: #889490; }
+
+a {
+  color: #444A48;
+  margin-left: 5%; }
+
+article {
+  background-color: #C6C8C8;
+  margin-bottom: 3%;
+  padding: 2%; }

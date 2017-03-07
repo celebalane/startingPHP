@@ -1,37 +1,65 @@
-<?php
-//Exo 1
-$name = 'Emilie<br>';
-echo $name;
 
-//Exo 2
-$nom = 'Leterme';
-$prenom = 'Mango';
-$age = 1;
-echo $nom.' '.$prenom.' '.$age.'<br>';
-
-//Exo 3
-$kilometre = 1;
-echo $kilometre.'<br>';
-$kilometre = 3;
-echo $kilometre.'<br>';
-$kilometre = 125;
-echo $kilometre.'<br>';
-
-//Exo 4
-
-$animal='chat';
-$mois= 4;
-$poids = 4.5;
-$male = true;
-echo $animal.' '.$mois.' '.$poids.' '.$male.'<br>';
-
-//Exo 5
-
-$nombre;
-echo $nombre;
-$nombre = 2;
-echo $nombre.'<br>';
-
-
-
-?>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<title>Variables</title>
+</head>
+	<body>
+		<section>
+			<article>
+				<?php
+					//Exo 1
+					$name = 'Emilie<br>';
+					echo $name;
+				?>
+			</article>
+			<article>
+				<?php
+					//Exo 2
+					$nom = 'Leterme';
+					$prenom = 'Mango';
+            		$age = 1;
+            		echo 'Nom: '.$nom.', Prénom: '.$prenom.', Age: '.$age.'<br>';
+            	?>
+            </article>
+            <article>
+            	<?php
+            		//Exo 3
+            		$kilometre = 1;
+            		echo 'kilometre: '.$kilometre.'<br>';
+            		$kilometre = 3;
+            		echo 'kilometre: '.$kilometre.'<br>';
+            		$kilometre = 125;
+            		echo 'kilometre: '.$kilometre.'<br>';
+            	?>
+            </article>
+            <article>
+            	<?php
+            		//Exo 4
+            		$animal='chat';
+            		$mois= 4;
+            		$poids = 4.5;
+            		$male = true;
+            		echo 'Animal: '.$animal.', Mois de naissance: '.$mois.', Poids: '.$poids.', Sexe: '.$male.'<br>';
+            	?>
+            </article>
+            <article>
+            	<?php
+            		//Exo 5
+					$nombre;
+					echo $nombre;
+					$nombre = 2;
+					echo 'Nombre: '.$nombre.'<br>';
+				?>
+			</article>
+			<article>
+				<?php
+					//Exo 6
+					$nom = 'Mango';
+					echo 'Bonjour '.$nom.', comment vas-tu?';
+				?>
+			</article>
+		</section>
+	</body>
+</html>
