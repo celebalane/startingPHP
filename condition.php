@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<title>Variables</title>
+</head>
+	<body>
+		<section>
+			<article>
+			<h1>Exercice 1</h1>
+				<?php
+					$age = 30;
+
+					if ($age>=18){
+						echo 'Vous êtes majeur';
+					}else{
+						echo 'Vous êtes mineur';
+					}
+				?>
+			</article>
+			<article>
+				<h1>Exercice 2</h1>
+				<?php
+					$isEasy = true;
+
+					if ($isEasy){
+						echo "C'est facile!";
+					}else{
+						echo "C'est dur :(";
+					}
+				?>
+			</article>
+		</section>
+	</body>
+</html>
