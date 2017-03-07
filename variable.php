@@ -17,4 +17,12 @@ echo $kilometre.'<br>';
 $kilometre = 125;
 echo $kilometre.'<br>';
 
+//Exo 4
+
+$animal='chat';
+$mois= 4;
+$poids = 4.5;
+$male = true;
+echo $animal.' '.$mois.' '.$poids.' '.$male.'<br>';
+
 ?>
