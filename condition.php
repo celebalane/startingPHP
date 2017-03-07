@@ -91,6 +91,7 @@
         				case 9:
         					echo "Séisme capable de tout détruire sur une très vaste zone.";
         					break;
+        				default : echo 'Veuillez rentrer un chiffre valide';
 					}
 				?>
 			</article>
