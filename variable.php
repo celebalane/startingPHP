@@ -8,6 +8,7 @@
 	<body>
 		<section>
 			<article>
+				<h1>Exercice 1</h1>
 				<?php
 					//Exo 1
 					$name = 'Emilie<br>';
@@ -15,6 +16,7 @@
 				?>
 			</article>
 			<article>
+				<h1>Exercice 2</h1>
 				<?php
 					//Exo 2
 					$nom = 'Leterme';
@@ -24,6 +26,7 @@
             	?>
             </article>
             <article>
+            	<h1>Exercice 3</h1>
             	<?php
             		//Exo 3
             		$kilometre = 1;
@@ -35,6 +38,7 @@
             	?>
             </article>
             <article>
+            	<h1>Exercice 4</h1>
             	<?php
             		//Exo 4
             		$animal='chat';
@@ -45,15 +49,17 @@
             	?>
             </article>
             <article>
+            	<h1>Exercice 5</h1>
             	<?php
             		//Exo 5
-					$nombre;
-					echo $nombre;
+					$nombre = (int)NULL;
+					echo $nombre.'<br>';
 					$nombre = 2;
 					echo 'Nombre: '.$nombre.'<br>';
 				?>
 			</article>
 			<article>
+				<h1>Exercice 6</h1>
 				<?php
 					//Exo 6
 					$nom = 'Mango';
@@ -61,6 +67,7 @@
 				?>
 			</article>
 			<article>
+				<h1>Exercice 7</h1>
 				<?php
 					//Exo 7
 					$nom = 'Leterme';
@@ -71,7 +78,9 @@
 				?>
 			</article>
 			<article>
+				<h1>Exercice 8</h1>
 				<?php
+					//Exo 8
 					$addition = 3+4;
 					$multi = 5*20;
 					$division = 45/5;
