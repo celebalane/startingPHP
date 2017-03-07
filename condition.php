@@ -26,8 +26,30 @@
 					if ($isEasy){
 						echo "C'est facile!";
 					}else{
-						echo "C'est dur :(";
+						echo "C'est difficile :(";
 					}
+				?>
+			</article>
+			<article>
+				<h1>Exercice 3</h1>
+				<?php
+					$age = 24;
+					$genre ='femme';
+
+					if ($age>=18){
+						if($genre == 'homme'){
+							echo 'Vous êtes un homme est vous êtes majeur';
+						}else{
+							echo 'Vous êtes une femme est vous êtes majeure';
+						}
+					}else{
+						if($genre == 'homme'){
+							echo 'Vous êtes un homme est vous êtes mineur';
+						}else{
+							echo 'Vous êtes une femme est vous êtes mineure';
+						}
+					}
+
 				?>
 			</article>
 		</section>
