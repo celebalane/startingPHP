@@ -65,6 +65,7 @@
         	break;
         default : $resultatMagnitude= 'Veuillez rentrer un chiffre valide';
 	}
+
 	//Exo 5 traduction
 	$maVariable ='Femme';
 
@@ -81,6 +82,26 @@
 		echo 'c\'est pas bon !!!';
 	}else{
 		echo 'c\'est ok !!';
+	}
+
+	//Exo 7 traduction
+
+	$monAge = 30;
+
+	if($monAge>=18){
+		echo 'Tu es majeur';
+	}else{
+		echo 'Tu n\'est pas majeur';
+	}
+
+	//Exo 8 traduction
+
+	$maVariable = true;
+
+	if($maVariable){
+		echo 'c\'est ok !!';
+	}else{
+		echo 'c\'est pas bon !!!';
 	}
 
 ?>
