@@ -10,7 +10,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../style/css/style.css">
-	<title>Exercice 3</title>
+	<title>Exercice 6</title>
 </head>
 <body>
 <a href="../parametre.php">Retour</a>
