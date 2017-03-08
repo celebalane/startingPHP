@@ -69,8 +69,16 @@
 		<article>
 			<h1>Exercice 6</h1>
 			<?php
-				for ($i=20; $i >0 ; $i--) { 
+				for ($i=20; $i >=0 ; $i--) { 
 					echo "C'est presque bon ";
+				}
+			?>
+		</article>
+		<article>
+			<h1>Exercice 7</h1>
+			<?php
+				for ($i=1; $i <=100 ; $i+=15) { 
+					echo "On tient le bon bout! ";
 				}
 			?>
 		</article>
