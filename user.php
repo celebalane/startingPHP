@@ -23,34 +23,18 @@
 <body>
 	<section>
 		<article>
-			<h1>Exercice 3</h1>
+			<h1>Formulaire 1</h1>
 			<?php
 				echo $resultat;
 			?>
 			<a href="formulaire.php"><button type="button">Retour</button></a>
 		</article>
 		<article>
-			<h1>Exercice 4</h1>
+			<h1>Formulaire 2</h1>
 			<?php
 				echo $resultat2;
 			?>
 			<a href="formulaire.php"><button type="button">Retour</button></a>
-		</article>
-		<article>
-			<h1>Exercice 5</h1>
-			<a href="formulaire.php"><button type="button">Retour</button></a>
-		</article>
-		<article>
-			<h1>Exercice 4</h1>
-			
-		</article>
-		<article>
-			<h1>Exercice 5</h1>
-			
-		</article>
-		<article>
-			<h1>Exercice 6</h1>
-			
 		</article>
 	</section>
 </body>
