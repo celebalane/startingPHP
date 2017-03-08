@@ -82,6 +82,14 @@
 				}
 			?>
 		</article>
+		<article>
+			<h1>Exercice 8</h1>
+			<?php
+				for ($i=200; $i >=0 ; $i-=12) { 
+					echo 'Enfin!!!! ';
+				}
+			?> 
+		</article>
 	</section>
 </body>
 </html>
