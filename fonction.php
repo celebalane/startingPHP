@@ -27,7 +27,16 @@ function comparaison($nombre1, $nombre2){
 
 //Exo 5
 function mixage($nombre,$chaine){
-	return $nombre.$chaine;
+	if (is_int($nombre)){
+		return $nombre.$chaine;
+	}else{
+		return 'Veuillez entrer un nombre';
+	}
+}
+
+//Exo 6
+function bonjour($nom,$prenom,$age){
+	return "Bonjour ".$nom.' '.$prenom.', tu as '.$age.' ans';
 }
 
 ?>
@@ -46,37 +55,43 @@ function mixage($nombre,$chaine){
 			?>
 		</article>
 		<article>
-		<h1>Exercice 2</h1>
-			<?php
-				echo chaine('coucou');
-			?>
+			<h1>Exercice 2</h1>
+				<?php
+					echo chaine('coucou');
+				?>
 		</article>
 		<article>
-		<h1>Exercice 3</h1>
+			<h1>Exercice 3</h1>
 			<?php
 				echo concatenation('cou','cou');
 			?>
 		</article>
 		<article>
-		<h1>Exercice 4</h1>
+			<h1>Exercice 4</h1>
 			<?php
 				echo comparaison(45,67);
 			?>
 		</article>
 		<article>
-		<h1>Exercice 5</h1>
+			<h1>Exercice 5</h1>
 			<?php
 				echo mixage(30,' ans');
 			?>
 		</article>
 		<article>
-		<h1>Exercice 6</h1>
+			<h1>Exercice 6</h1>
+			<?php
+				echo bonjour('Leterme','Emilie',30);
+			?>
+		</article>
+		<article>
+			<h1>Exercice 7</h1>
 			<?php
 				
 			?>
 		</article>
 		<article>
-		<h1>Exercice 7</h1>
+			<h1>Exercice 8</h1>
 			<?php
 				
 			?>
