@@ -24,6 +24,12 @@ function comparaison($nombre1, $nombre2){
 		return 'les nombres sont égaux';
 	}
 }
+
+//Exo 5
+function mixage($nombre,$chaine){
+	return $nombre.$chaine;
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -60,11 +66,17 @@ function comparaison($nombre1, $nombre2){
 		<article>
 		<h1>Exercice 5</h1>
 			<?php
-				
+				echo mixage(30,' ans');
 			?>
 		</article>
 		<article>
 		<h1>Exercice 6</h1>
+			<?php
+				
+			?>
+		</article>
+		<article>
+		<h1>Exercice 7</h1>
 			<?php
 				
 			?>
