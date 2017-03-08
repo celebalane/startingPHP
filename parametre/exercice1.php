@@ -6,3 +6,14 @@
 	}
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style/css/style.css">
+	<title>Exercice 1</title>
+</head>
+<body>
+<a href="../parametre.php">Retour</a>
+</body>
+</html>
