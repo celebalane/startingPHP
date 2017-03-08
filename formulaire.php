@@ -29,13 +29,23 @@
 		<article>
 			<h1>Formulaire 3</h1>
 			<?php
-				if(isset($_GET['nom3']) &&isset($_GET['prenom3'])){
-					$resultat= htmlspecialchars($_GET['civilite'].' '.$_GET['nom3'].' '.$_GET['prenom3']);
+				if(isset($_POST['nom3']) && isset($_POST['prenom3'])){ 
+					$info = new SplFileInfo($_POST["fichier"]);
+					if( $info->getExtension() == "pdf"){
+						
+						$resultat= htmlspecialchars($_POST['civilite'].' '.$_POST['nom3'].' '.$_POST['prenom3'].' '.$_POST['fichier']);
+							
+					}else{
+						$resultat= 'Erreur, veuillez envoyer un PDF';
+					}
 					echo $resultat;
-					?><a href="formulaire.php"><button type="button">Retour</button></a><?php
+				
+				?>
+				<a href="formulaire.php"><button type="button">Retour</button></a>
+				<?php
 				}else{
 			?>
-			<form method="get" action="formulaire.php">
+			<form method="post" action="formulaire.php">
 				<label for="civilite">Civilite</label>
 				<SELECT name="civilite" id="civilite">
 					<option value="madame">Madame</option>
@@ -45,6 +55,9 @@
 				<input type="text" name="nom3" placeholder="Ex: Dupond" id="nom3"/>
 				<label for="prenom3">Prénom</label>
 				<input type="text" name="prenom3" placeholder="Ex: Jacques" id="prenom3"/>
+				<input type="file" name="fichier" />
+				<input type="hidden" name="MAX_FILE_SIZE" value="100000">
+
 				<button type="submit">Envoi</button>
 			</form>
 			<?php		
