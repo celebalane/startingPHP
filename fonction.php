@@ -4,7 +4,12 @@ function vraie(){
 	return 'true';
 }
 
-//Exo 2
+//Exo 2 
+function chaine($coucou){
+	return $coucou;
+}
+
+//Exo 3
 
 ?>
 <!DOCTYPE html>
@@ -24,7 +29,7 @@ function vraie(){
 		<article>
 		<h1>Exercice 2</h1>
 			<?php
-				
+				echo chaine('coucou');
 			?>
 		</article>
 		<article>
