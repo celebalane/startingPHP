@@ -36,7 +36,9 @@ function mixage($nombre,$chaine){
 
 //Exo 6
 function bonjour($nom,$prenom,$age){
-	return "Bonjour ".$nom.' '.$prenom.', tu as '.$age.' ans';
+	if (is_int($age)){
+		return "Bonjour ".$nom.' '.$prenom.', tu as '.$age.' ans';
+	}
 }
 
 //Exo 7
@@ -55,6 +57,14 @@ function majorite($age,$genre){
 			}
 		}
 }
+
+//Exo 8
+function addition($nombre1=1,$nombre2=1,$nombre3=1){
+	if (is_int($nombre1)&& is_int($nombre2) && is_int($nombre3)){
+		return $nombre1+$nombre2+$nombre3;
+	}
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -109,7 +119,7 @@ function majorite($age,$genre){
 		<article>
 			<h1>Exercice 8</h1>
 			<?php
-				
+				echo addition(3,3,3);
 			?>
 		</article>
 	</section>
