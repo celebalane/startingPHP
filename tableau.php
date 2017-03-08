@@ -11,8 +11,6 @@
 //Exo 7
 	$departement[51]='Marne';
 
-//Exo 9
-
 ?>
 
 <!DOCTYPE html>
