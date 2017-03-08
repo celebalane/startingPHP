@@ -81,7 +81,9 @@
 	<article>
 		<h1>Exercice 10</h1>
 		<?php
-		
+			foreach ($departement as $numero => $case) {
+				echo "Le département ".$case." a le numéro : ".$numero.'<br>';
+			}
 		?>
 	</article>
 </body>
