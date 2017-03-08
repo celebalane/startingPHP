@@ -46,6 +46,18 @@
 			 	}
 			 ?>
 		</article>
+		<article>
+			<h1>Exercice 4</h1>
+			<?php
+				$truc=1;
+
+				while ( $truc < 10) {
+					echo $truc.' ';
+					$truc+=$truc*0.5;
+				}
+
+			?>
+		</article>
 	</section>
 </body>
 </html>
