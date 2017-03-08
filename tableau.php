@@ -1,7 +1,7 @@
 <?php
 //Exo 1
 	$mois =array('janvier','fevrier','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre');
-//Exo 2
+//Exo 
 
 
 ?>
@@ -30,7 +30,7 @@
 	<article>
 		<h1>Exercice 3</h1>
 		<?php
-		
+			echo $mois[5];
 		?>
 	</article>
 	<article>
