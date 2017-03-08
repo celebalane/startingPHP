@@ -8,8 +8,10 @@
 //Exo 5
 	$departement = [02=>'Aisne',59=>'Nord',60=>'Oise',80=>'Somme'];
 
-//Exo 6
+//Exo 7
 	$departement[51]='Marne';
+
+//Exo 8
 
 ?>
 
@@ -65,7 +67,9 @@
 	<article>
 		<h1>Exercice 8</h1>
 		<?php
-		
+			foreach ($mois as $case) {
+				echo $case.' ';
+			}
 		?>
 	</article>
 	<article>
