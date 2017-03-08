@@ -39,6 +39,22 @@ function bonjour($nom,$prenom,$age){
 	return "Bonjour ".$nom.' '.$prenom.', tu as '.$age.' ans';
 }
 
+//Exo 7
+function majorite($age,$genre){
+	if ($age>=18){
+		if($genre == 'homme'){
+			return 'Vous êtes un homme et vous êtes majeur';
+		}else{
+			return'Vous êtes une femme et vous êtes majeure';
+		}
+		}else{
+			if($genre == 'homme'){
+				return 'Vous êtes un homme et vous êtes mineur';
+			}else{
+				return 'Vous êtes une femme et vous êtes mineure';
+			}
+		}
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -87,7 +103,7 @@ function bonjour($nom,$prenom,$age){
 		<article>
 			<h1>Exercice 7</h1>
 			<?php
-				
+				echo majorite(18,'homme');
 			?>
 		</article>
 		<article>
