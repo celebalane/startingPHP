@@ -70,18 +70,18 @@
 	$maVariable ='Femme';
 
 	if($maVariable != 'Homme'){
-		echo 'C\'est une développeuse !!!';
+		$maVariable= 'C\'est une développeuse !!!';
 	}else{
-		echo 'C\'est un développeur !!!';
+		$maVariable= 'C\'est un développeur !!!';
 	}
 
 	//Exo 6 traduction
-	$maVariable = false;
+	$maVariable2 = false;
 
-	if($maVariable == false){
-		echo 'c\'est pas bon !!!';
+	if($maVariable2 == false){
+		$maVariable2= 'c\'est pas bon !!!';
 	}else{
-		echo 'c\'est ok !!';
+		$maVariable2= 'c\'est ok !!';
 	}
 
 	//Exo 7 traduction
@@ -89,19 +89,19 @@
 	$monAge = 30;
 
 	if($monAge>=18){
-		echo 'Tu es majeur';
+		$monAge= 'Tu es majeur';
 	}else{
-		echo 'Tu n\'est pas majeur';
+		$monAge='Tu n\'est pas majeur';
 	}
 
 	//Exo 8 traduction
 
-	$maVariable = true;
+	$maVariable3 = true;
 
-	if($maVariable){
-		echo 'c\'est ok !!';
+	if($maVariable3){
+		$maVariable3= 'c\'est ok !!';
 	}else{
-		echo 'c\'est pas bon !!!';
+		$maVariable3= 'c\'est pas bon !!!';
 	}
 
 ?>
@@ -142,6 +142,12 @@
 			<article>
 				<h1>Exercice 5/6/7/8</h1>
 					<p>Voir le code!</p>
+					<?php
+						echo $maVariable;
+						echo $maVariable2;
+						echo $maVariable3;
+						echo $monAge;
+					?>
 			</article>
 		</section>
 	</body>

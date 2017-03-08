@@ -9,6 +9,7 @@
 		<h1>Les exercices</h1>
 		<a href="variable.php">Exercice 1</a>
 		<a href="condition.php">Exercice 2</a>
+		<a href="boucle.php">Exercice 3</a>
 	</section>
 </body>
 </html>
