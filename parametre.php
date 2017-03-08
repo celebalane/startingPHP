@@ -24,11 +24,12 @@
 		</article>
 		<article>
 			<h1>Exercice 5</h1>
-			<a href="">Résultat</a>
+			<a href="parametre/exercice5.php?semaine=12">Résultat</a>
 		</article>
 		<article>
 			<h1>Exercice 6</h1>
-			<a href="">Résultat</a>
+			<a href="parametre/exercice6.php?batiment=12&salle=101">Résultat</a>
+			<a href="parametre/exercice6.php?batiment=<script>alert(‘lol’)</script>&salle=101">Résultat</a>
 		</article>
 	</section>
 </body>
