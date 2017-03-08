@@ -10,6 +10,9 @@ function chaine($coucou){
 }
 
 //Exo 3
+function concatenation($caractere1,$caractere2){
+	return $caractere1.$caractere2;
+}
 
 ?>
 <!DOCTYPE html>
@@ -35,7 +38,7 @@ function chaine($coucou){
 		<article>
 		<h1>Exercice 3</h1>
 			<?php
-				
+				echo concatenation('cou','cou');
 			?>
 		</article>
 		<article>
