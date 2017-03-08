@@ -15,10 +15,22 @@
 			<?php
 				 $uneVariable = 0;
 
- 				while ($uneVariable < 10) {
- 				$uneVariable += 1;
- 				echo $uneVariable.'<br>';
+ 				while ($uneVariable <= 10) {
+ 				
+ 				echo $uneVariable.' ';
+ 				$uneVariable ++;
  				}
+			?>
+		</article>
+		<article>
+			<?php
+				$premier=0;
+				$deuxieme=49;
+
+				while ( $premier < 20) {
+					echo $premier*$deuxieme.' ';
+					$premier ++;
+				}
 			?>
 		</article>
 	</section>
