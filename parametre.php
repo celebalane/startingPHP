@@ -12,9 +12,7 @@
 		</article>
 		<article>
 			<h1>Exercice 2</h1>
-			<?php
-			
-			?>
+			<a href="parametre/exercice2.php?nom=Nemare&prenom=Jean">Résultat</a>
 		</article>
 		<article>
 			<h1>Exercice 3</h1>
