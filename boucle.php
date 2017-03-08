@@ -51,7 +51,7 @@
 			<?php
 				$truc=1;
 
-				while ( $truc < 10) {
+				while ($truc < 10) {
 					echo $truc.' ';
 					$truc+=$truc*0.5;
 				}
@@ -63,6 +63,14 @@
 			<?php
 				for ($i=1; $i <= 15; $i++) { 
 					echo 'On y arrive presque ';
+				}
+			?>
+		</article>
+		<article>
+			<h1>Exercice 6</h1>
+			<?php
+				for ($i=20; $i >0 ; $i--) { 
+					echo "C'est presque bon ";
 				}
 			?>
 		</article>
