@@ -11,7 +11,7 @@
 //Exo 7
 	$departement[51]='Marne';
 
-//Exo 8
+//Exo 9
 
 ?>
 
@@ -75,7 +75,7 @@
 	<article>
 		<h1>Exercice 9</h1>
 		<?php
-		
+			print_r($departement);
 		?>
 	</article>
 	<article>
