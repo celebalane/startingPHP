@@ -2,8 +2,14 @@
 //Exo 1
 	$mois =array('janvier','fevrier','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre');
 
-//Exo 3
+//Exo 4
 	$mois[3]='julien';
+
+//Exo 5
+	$departement = [02=>'Aisne',59=>'Nord',60=>'Oise',80=>'Somme'];
+
+//Exo 6
+
 
 ?>
 
@@ -17,9 +23,7 @@
 	<article>
 		<h1>Exercice 1</h1>
 		<?php
-			foreach ($mois as  $case) {
-			 	echo $case.' ';
-			 } 
+			var_dump($mois);
 		?>
 	</article>
 	<article>
@@ -43,13 +47,13 @@
 	<article>
 		<h1>Exercice 5</h1>
 		<?php
-		
+			var_dump($departement);
 		?>
 	</article>
 	<article>
 		<h1>Exercice 6</h1>
 		<?php
-		
+			echo $departement[59];
 		?>
 	</article>
 	<article>
