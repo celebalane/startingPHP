@@ -20,7 +20,7 @@
 		</article>
 		<article>
 			<h1>Exercice 4</h1>
-			<a href="">Résultat</a>
+			<a href="parametre/exercice4.php?langage=PHP&serveur=LAMP">Résultat</a>
 		</article>
 		<article>
 			<h1>Exercice 5</h1>
