@@ -9,7 +9,7 @@
 	$departement = [02=>'Aisne',59=>'Nord',60=>'Oise',80=>'Somme'];
 
 //Exo 6
-
+	$departement[51]='Marne';
 
 ?>
 
@@ -59,7 +59,7 @@
 	<article>
 		<h1>Exercice 7</h1>
 		<?php
-		
+			var_dump($departement);
 		?>
 	</article>
 	<article>
