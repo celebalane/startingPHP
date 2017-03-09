@@ -33,7 +33,7 @@
 		<article>
 		<h1>Exercice 3</h1>
 		<?php
-			
+			echo strftime('%A %e %B %Y');
 		?>
 		</article>
 		<article>
