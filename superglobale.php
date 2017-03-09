@@ -6,20 +6,25 @@
 	$_SESSION['age']= 30;
 
 if (isset($_POST['id']) && isset($_POST['pwd'])) {
+	$pseudo = $_POST['id'];
+	$pwd = $_POST['pwd'];
 	setcookie("id", $_POST['id'],time()+3600);
 	setcookie("pwd", $_POST['pwd'],time()+3600);
 	header('Location:superglobale2.php');
+}else{
+	$pseudo= ' Veuillez entrer un identifiant ';
+	$pwd= 'Veuillez entrer un mdp ';
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style/css/style.css">
-	<title>Dates</title>
+	<title>Super globales</title>
 </head>
 <body>
 	<nav>
-		<h1>Les exercices</h1>
+		<a href="index.php"><h1>Les exercices</h1></a>
 		<a href="variable.php">Exercice 1</a>
 		<a href="condition.php">Exercice 2</a>
 		<a href="boucle.php">Exercice 3</a>
@@ -28,6 +33,7 @@ if (isset($_POST['id']) && isset($_POST['pwd'])) {
 		<a href="parametre.php">Exercice 6</a>
 		<a href="formulaire.php">Exercice 7</a>
 		<a href="superglobale.php">Exercice 8</a>
+		<a href="date.php">Exercice 9</a>
 	</nav>
 	<section>
 		<article>
@@ -44,9 +50,9 @@ if (isset($_POST['id']) && isset($_POST['pwd'])) {
 			<h1>Exercice 3/4/5</h1>
 			<form method="post" action="superglobale.php">
 				<label for="id">Identifiant</label>
-				<input type="text" name="id" placeholder="Ex: Dupond" id="id" />
+				<input type="text" name="id" value="<?= $pseudo;?>" placeholder="Ex: Dupond" id="id" />
 				<label for="pwd">Login</label>
-				<input type="password" name="pwd" placeholder="Ex: Jacques" id="pwd" />
+				<input type="password" name="pwd" placeholder="<?= $pwd;?>" id="pwd" />
 				<button type="submit">Envoi</button>
 			</form>
 		</article>

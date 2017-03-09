@@ -41,10 +41,10 @@
 			<h1>Formulaire 3</h1>
 			<?php
 				if(isset($_POST['nom3']) && isset($_POST['prenom3'])){ 
-					$info = new SplFileInfo($_POST["fichier"]);
-					if( $info->getExtension() == "pdf"){
+					$extension = explode('.',$_FILES['fichier']['name']);
+					if($extension[1]=='pdf' && $_FILES['fichier']['type']== 'application/pdf'){
 						
-						$resultat= htmlspecialchars($_POST['civilite'].' '.$_POST['nom3'].' '.$_POST['prenom3'].' '.$_POST['fichier']);
+							$resultat= htmlspecialchars($_POST['civilite'].' '.$_POST['nom3'].' '.$_POST['prenom3'].' '.$_FILES["fichier"]["name"]);
 							
 					}else{
 						$resultat= 'Erreur, veuillez envoyer un PDF';
@@ -56,7 +56,7 @@
 				<?php
 				}else{
 			?>
-			<form method="post" action="formulaire.php">
+			<form method="post" action="formulaire.php" enctype="multipart/form-data">
 				<label for="civilite">Civilite</label>
 				<SELECT name="civilite" id="civilite">
 					<option value="madame">Madame</option>

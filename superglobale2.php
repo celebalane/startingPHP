@@ -9,7 +9,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style/css/style.css">
-	<title>Exo 2</title>
+	<title>Super globales 2</title>
 </head>
 <body>
 	<article>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style/css/style.css">
-	<title>Exercices PHP</title>
+	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<title>Super globales</title>
 </head>
 <body>
 	<nav>
@@ -17,6 +17,14 @@
 		<a href="superglobale.php">Exercice 8</a>
 		<a href="date.php">Exercice 9</a>
 	</nav>
+	<section>
+		<article>
+		<h1>Exercice 1</h1>
+		<?php
+			echo date('d/m/Y');
+		?>
+		</article>
+	</section>
 </body>
 </html>
 
