@@ -4,9 +4,11 @@
 	$_SESSION['prenom']= 'Emilie';
 	$_SESSION['nom']= 'Leterme';
 	$_SESSION['age']= 30;
+
 if (isset($_POST['id']) && isset($_POST['pwd'])) {
-	setcookie("id", $_POST['id']);
-	setcookie("pwd", $_POST['pwd']);
+	setcookie("id", $_POST['id'],time()+3600);
+	setcookie("pwd", $_POST['pwd'],time()+3600);
+	header('Location:superglobale2.php');
 }
 ?>
 <!DOCTYPE html>
@@ -40,16 +42,13 @@ if (isset($_POST['id']) && isset($_POST['pwd'])) {
 		</article>
 		<article>
 			<h1>Exercice 3</h1>
-			<form method="post" action="superglobale2.php">
+			<form method="post" action="superglobale.php">
 				<label for="id">Identifiant</label>
 				<input type="text" name="id" placeholder="Ex: Dupond" id="id" />
 				<label for="pwd">Login</label>
 				<input type="password" name="pwd" placeholder="Ex: Jacques" id="pwd" />
 				<button type="submit">Envoi</button>
 			</form>
-			<?php
-				
-			?>
 		</article>
 	</section>
 </body>

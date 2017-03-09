@@ -17,8 +17,27 @@
 	</article>
 	<article>
 	<?php
+	
 		echo "Ton identifiant est ".$_COOKIE['id'].'<br>';
 		echo "Ton mot de passe est ".$_COOKIE['pwd'];
+	?>
+	</article>
+	<article>
+	<?php
+	if(isset($_COOKIE['id'])&&isset($_COOKIE['pwd'])){	
+	?>
+		<h2>Modifier l'identifiant</h2>
+		<form method="post" action="superglobale2.php">
+			<label for="id">Nouvel Identifiant</label>
+			<input type="text" name="id" placeholder="Ex: Dupond" id="id" />
+			<label for="pwd">Login</label>
+			<input type="password" name="pwd" placeholder="Ex: Jacques" id="pwd" />
+			<button type="submit">Envoi</button>
+		</form>
+	<?php
+	}else{
+		echo 'erreur';
+	}
 	?>
 	</article>
 </body>
