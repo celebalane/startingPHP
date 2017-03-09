@@ -46,25 +46,27 @@
 		<article>
 		<h1>Exercice 5</h1>
 		<?php
-			echo (time()-mktime(0,0,0,05,16,2016))/86400;
+			echo floor((time()-mktime(0,0,0,05,16,2016))/86400);
 		?>
 		</article>
 		<article>
 		<h1>Exercice 6</h1>
 		<?php
-			
+			echo cal_days_in_month(CAL_GREGORIAN, 2, 2016);
 		?>
 		</article>
 		<article>
 		<h1>Exercice 7</h1>
 		<?php
-			
+			$date = '03/09/2017';
+			echo date('d/m/Y', strtotime($date.' + 20 DAY'));
 		?>
 		</article>
 		<article>
 		<h1>Exercice 8</h1>
 		<?php
-			
+			$date = '03/09/2017';
+			echo date('d/m/Y', strtotime($date.' - 22 DAY'));
 		?>
 		</article>
 	</section>
