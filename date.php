@@ -24,6 +24,48 @@
 			echo date('d/m/Y');
 		?>
 		</article>
+		<article>
+		<h1>Exercice 2</h1>
+		<?php
+			echo date('d-m-y');
+		?>
+		</article>
+		<article>
+		<h1>Exercice 3</h1>
+		<?php
+			
+		?>
+		</article>
+		<article>
+		<h1>Exercice 4</h1>
+		<?php
+			
+		?>
+		</article>
+		<article>
+		<h1>Exercice 5</h1>
+		<?php
+			
+		?>
+		</article>
+		<article>
+		<h1>Exercice 6</h1>
+		<?php
+			
+		?>
+		</article>
+		<article>
+		<h1>Exercice 7</h1>
+		<?php
+			
+		?>
+		</article>
+		<article>
+		<h1>Exercice 8</h1>
+		<?php
+			
+		?>
+		</article>
 	</section>
 </body>
 </html>
