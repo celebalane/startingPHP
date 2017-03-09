@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style/css/style.css">
-	<title>formulaire</title>
+	<title>Formulaire</title>
 </head>
 <body>
 	<section>
