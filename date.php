@@ -46,7 +46,7 @@
 		<article>
 		<h1>Exercice 5</h1>
 		<?php
-			
+			echo (time()-mktime(0,0,0,05,16,2016))/86400;
 		?>
 		</article>
 		<article>
