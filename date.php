@@ -33,13 +33,14 @@
 		<article>
 		<h1>Exercice 3</h1>
 		<?php
-			echo strftime('%A %e %B %Y');
+			echo strftime('%A %e %B %Y'); 
 		?>
 		</article>
 		<article>
 		<h1>Exercice 4</h1>
 		<?php
-			
+			echo time().'<br>';
+			echo mktime(15, 34, 12, 03, 02, 2016);
 		?>
 		</article>
 		<article>
