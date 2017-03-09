@@ -1,5 +1,8 @@
 <?php
 	session_start();
+	if(isset($_POST['pwd'])){
+		$_COOKIE['pwd']=$_POST['pwd'];
+	}	
 ?>
 
 <!DOCTYPE html>
@@ -23,14 +26,13 @@
 	?>
 	</article>
 	<article>
+
 	<?php
-	if(isset($_COOKIE['id'])&&isset($_COOKIE['pwd'])){	
+		if(isset($_COOKIE['id'])&&isset($_COOKIE['pwd'])){	
 	?>
-		<h2>Modifier l'identifiant</h2>
+		<h2>Modifier le mot de passe</h2>
 		<form method="post" action="superglobale2.php">
-			<label for="id">Nouvel Identifiant</label>
-			<input type="text" name="id" placeholder="Ex: Dupond" id="id" />
-			<label for="pwd">Login</label>
+			<label for="pwd">Nouveau mot de passe</label>
 			<input type="password" name="pwd" placeholder="Ex: Jacques" id="pwd" />
 			<button type="submit">Envoi</button>
 		</form>

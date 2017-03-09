@@ -41,7 +41,7 @@ if (isset($_POST['id']) && isset($_POST['pwd'])) {
 			<a href="superglobale2.php">Affichage</a>
 		</article>
 		<article>
-			<h1>Exercice 3</h1>
+			<h1>Exercice 3/4/5</h1>
 			<form method="post" action="superglobale.php">
 				<label for="id">Identifiant</label>
 				<input type="text" name="id" placeholder="Ex: Dupond" id="id" />
