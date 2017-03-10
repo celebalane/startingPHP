@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style/css/style.css">
 	<title>Exercices PHP</title>
 </head>
 <body>
+	<h1>Exercices PHP</h1>
 	<nav>
-		<a href="index.php"><h1>Les exercices</h1></a>
-		<a href="variable.php">Exercice 1</a>
-		<a href="condition.php">Exercice 2</a>
-		<a href="boucle.php">Exercice 3</a>
-		<a href="fonction.php">Exercice 4</a>
-		<a href="tableau.php">Exercice 5</a>
-		<a href="parametre.php">Exercice 6</a>
-		<a href="formulaire.php">Exercice 7</a>
-		<a href="superglobale.php">Exercice 8</a>
-		<a href="date.php">Exercice 9</a>
-		<a href="td.php">TD</a>
+		<ul id="nav">
+			<li><a href="variable.php"><img src="img/variable.svg" id="img1" /><p>Variables</p></a></li>
+			<li><a href="condition.php"><img src="img/condition.svg" id="img2" /><p>Conditions</p></a></li>
+			<li><a href="boucle.php"><img src="img/boucle.svg" id="img3" /><p>Boucles</p></a></li>
+			<li><a href="fonction.php"><img src="img/fonction.svg" id="img4" /><p>Fonctions</p></a></li>
+			<li><a href="tableau.php"><img src="img/tableau.svg" id="img5" /><p>Tableaux</p></a></li>
+			<li><a href="parametre.php"><img src="img/parametre.svg" id="img6" /><p>Paramètres</p></a></li>
+			<li><a href="formulaire.php"><img src="img/formulaire.svg" id="img7" /><p>Formulaires</p></a></li>
+			<li><a href="superglobale.php"><img src="img/superglobale.svg" id="img8" /><p>Superglobales</p></a></li>
+			<li><a href="date.php"><img src="img/date.svg" id="img9" /><p>Dates</p></a></li>
+			<li><a href="td.php"><img src="img/td.svg" id="img10" /></li></a>
+		</ul>
 	</nav>
 </body>
 </html>
+<?php
 

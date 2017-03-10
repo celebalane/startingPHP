@@ -16,66 +16,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<link rel="stylesheet" type="text/css" href="style/css/page.css">
 	<title>Tableaux</title>
 </head>
 <body>
 	<nav>
-		<a href="index.php"><h1>Les exercices</h1></a>
-		<a href="variable.php">Exercice 1</a>
-		<a href="condition.php">Exercice 2</a>
-		<a href="boucle.php">Exercice 3</a>
-		<a href="fonction.php">Exercice 4</a>
-		<a href="tableau.php">Exercice 5</a>
-		<a href="parametre.php">Exercice 6</a>
-		<a href="formulaire.php">Exercice 7</a>
-		<a href="superglobale.php">Exercice 8</a>
-		<a href="date.php">Exercice 9</a>
+		<ul id="nav">
+			<li><a href="variable.php"><img src="img/variable.svg" id="img1" /><p>Variables</p></a></li>
+			<li><a href="condition.php"><img src="img/condition.svg" id="img2" /><p>Conditions</p></a></li>
+			<li><a href="boucle.php"><img src="img/boucle.svg" id="img3" /><p>Boucles</p></a></li>
+			<li><a href="fonction.php"><img src="img/fonction.svg" id="img4" /><p>Fonctions</p></a></li>
+			<li><a href="tableau.php"><img src="img/tableau.svg" id="img5" /><p>Tableaux</p></a></li>
+			<li><a href="parametre.php"><img src="img/parametre.svg" id="img6" /><p>Paramètres</p></a></li>
+			<li><a href="formulaire.php"><img src="img/formulaire.svg" id="img7" /><p>Formulaires</p></a></li>
+			<li><a href="superglobale.php"><img src="img/superglobale.svg" id="img8" /><p>Superglobales</p></a></li>
+			<li><a href="date.php"><img src="img/date.svg" id="img9" /><p>Dates</p></a></li>
+			<li><a href="td.php"><img src="img/td.svg" id="img10" /></li></a>
+		</ul>
 	</nav>
 	<article>
-		<h1>Exercice 1</h1>
+		<h2>Exercice 1</h2>
 		<?php
 			var_dump($mois);
 		?>
 	</article>
 	<article>
-		<h1>Exercice 2</h1>
+		<h2>Exercice 2</h2>
 		<?php
 			echo $mois[2];
 		?>
 	</article>
 	<article>
-		<h1>Exercice 3</h1>
+		<h2>Exercice 3</h2>
 		<?php
 			echo $mois[5];
 		?>
 	</article>
 	<article>
-		<h1>Exercice 4</h1>
+		<h2>Exercice 4</h2>
 		<?php
 			echo $mois[3];
 		?>
 	</article>
 	<article>
-		<h1>Exercice 5</h1>
+		<h2>Exercice 5</h2>
 		<?php
 			var_dump($departement);
 		?>
 	</article>
 	<article>
-		<h1>Exercice 6</h1>
+		<h2>Exercice 6</h2>
 		<?php
 			echo $departement[59];
 		?>
 	</article>
 	<article>
-		<h1>Exercice 7</h1>
+		<h2>Exercice 7</h2>
 		<?php
 			var_dump($departement);
 		?>
 	</article>
 	<article>
-		<h1>Exercice 8</h1>
+		<h2>Exercice 8</h2>
 		<?php
 			foreach ($mois as $case) {
 				echo $case.' ';
@@ -83,13 +85,13 @@
 		?>
 	</article>
 	<article>
-		<h1>Exercice 9</h1>
+		<h2>Exercice 9</h2>
 		<?php
 			print_r($departement);
 		?>
 	</article>
 	<article>
-		<h1>Exercice 10</h1>
+		<h2>Exercice 10</h2>
 		<?php
 			foreach ($departement as $numero => $case) {
 				echo "Le département ".$case." a le numéro : ".$numero.'<br>';

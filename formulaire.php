@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<link rel="stylesheet" type="text/css" href="style/css/page.css">
 	<title>Formulaire</title>
 </head>
 <body>
 	<nav>
-		<h1>Les exercices</h1>
-		<a href="variable.php">Exercice 1</a>
-		<a href="condition.php">Exercice 2</a>
-		<a href="boucle.php">Exercice 3</a>
-		<a href="fonction.php">Exercice 4</a>
-		<a href="tableau.php">Exercice 5</a>
-		<a href="parametre.php">Exercice 6</a>
-		<a href="formulaire.php">Exercice 7</a>
-		<a href="superglobale.php">Exercice 8</a>
+		<ul id="nav">
+			<li><a href="variable.php"><img src="img/variable.svg" id="img1" /><p>Variables</p></a></li>
+			<li><a href="condition.php"><img src="img/condition.svg" id="img2" /><p>Conditions</p></a></li>
+			<li><a href="boucle.php"><img src="img/boucle.svg" id="img3" /><p>Boucles</p></a></li>
+			<li><a href="fonction.php"><img src="img/fonction.svg" id="img4" /><p>Fonctions</p></a></li>
+			<li><a href="tableau.php"><img src="img/tableau.svg" id="img5" /><p>Tableaux</p></a></li>
+			<li><a href="parametre.php"><img src="img/parametre.svg" id="img6" /><p>Paramètres</p></a></li>
+			<li><a href="formulaire.php"><img src="img/formulaire.svg" id="img7" /><p>Formulaires</p></a></li>
+			<li><a href="superglobale.php"><img src="img/superglobale.svg" id="img8" /><p>Superglobales</p></a></li>
+			<li><a href="date.php"><img src="img/date.svg" id="img9" /><p>Dates</p></a></li>
+			<li><a href="td.php"><img src="img/td.svg" id="img10" /></li></a>
+		</ul>
 	</nav>
 	<section>
 		<article>
-			<h1>Formulaire 1</h1>
+			<h2>Formulaire 1</h2>
 			<form method="get" action="user.php">
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" placeholder="Ex: Dupond" id="nom" />
@@ -28,7 +31,7 @@
 			</form>
 		</article>
 		<article>
-			<h1>Formulaire 2</h1>
+			<h2>Formulaire 2</h2>
 			<form method="post" action="user.php">
 				<label for="nom2">Nom</label>
 				<input type="text" name="nom" placeholder="Ex: Dupond" id="nom2"/>
@@ -38,7 +41,7 @@
 			</form>
 		</article>
 		<article>
-			<h1>Formulaire 3</h1>
+			<h2>Formulaire 3</h2>
 			<?php
 				if(isset($_POST['nom3']) && isset($_POST['prenom3'])){ 
 					$extension = explode('.',$_FILES['fichier']['name']);
