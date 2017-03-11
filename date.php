@@ -1,3 +1,10 @@
+<?php
+	//Exo 7
+	$date = '03/09/2017';
+
+	//Exo 8
+	$date2 = '03/09/2017';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,15 +67,13 @@
 		<article>
 		<h2>Exercice 7</h2>
 		<?php
-			$date = '03/09/2017';
 			echo date('d/m/Y', strtotime($date.' + 20 DAY'));
 		?>
 		</article>
 		<article>
 		<h2>Exercice 8</h2>
 		<?php
-			$date = '03/09/2017';
-			echo date('d/m/Y', strtotime($date.' - 22 DAY'));
+			echo date('d/m/Y', strtotime($date2.' - 22 DAY'));
 		?>
 		</article>
 	</section>

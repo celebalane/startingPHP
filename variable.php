@@ -1,4 +1,31 @@
+<?php
+	//Exo 1
+	$name = 'Emilie<br>';
 
+	//Exo 2
+	$nom = 'Leterme';
+	$prenom = 'Mango';
+    $age = 1;
+
+    //Exo 4
+    $animal='chat';
+    $mois= 4;
+    $poids = 4.5;
+    $male = true;
+
+    //Exo 6
+    $nom2 = 'Mango';
+
+    //Exo 7
+    $prenom2= 'Emilie';
+	$age2 = 30;
+
+	//Exo 8
+	$addition = 3+4;
+	$multi = 5*20;
+	$division = 45/5;
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,18 +51,12 @@
 			<article>
 				<h2>Exercice 1</h2>
 				<?php
-					//Exo 1
-					$name = 'Emilie<br>';
 					echo $name;
 				?>
 			</article>
 			<article>
 				<h2>Exercice 2</h2>
 				<?php
-					//Exo 2
-					$nom = 'Leterme';
-					$prenom = 'Mango';
-            		$age = 1;
             		echo 'Nom: '.$nom.', Prénom: '.$prenom.', Age: '.$age.'<br>';
             	?>
             </article>
@@ -54,11 +75,6 @@
             <article>
             	<h2>Exercice 4</h2>
             	<?php
-            		//Exo 4
-            		$animal='chat';
-            		$mois= 4;
-            		$poids = 4.5;
-            		$male = true;
             		echo 'Animal: '.$animal.', Mois de naissance: '.$mois.', Poids: '.$poids.', Sexe: '.$male.'<br>';
             	?>
             </article>
@@ -75,29 +91,18 @@
 			<article>
 				<h2>Exercice 6</h2>
 				<?php
-					//Exo 6
-					$nom = 'Mango';
-					echo 'Bonjour '.$nom.', comment vas-tu?';
+					echo 'Bonjour '.$nom2.', comment vas-tu?';
 				?>
 			</article>
 			<article>
 				<h2>Exercice 7</h2>
 				<?php
-					//Exo 7
-					$nom = 'Leterme';
-					$prenom= 'Emilie';
-					$age = 30;
-
-					echo 'Bonjour '.$nom.' '.$prenom.', tu as '.$age.' ans.<br>';
+					echo 'Bonjour '.$nom.' '.$prenom2.', tu as '.$age2.' ans.<br>';
 				?>
 			</article>
 			<article>
 				<h2>Exercice 8</h2>
 				<?php
-					//Exo 8
-					$addition = 3+4;
-					$multi = 5*20;
-					$division = 45/5;
 					echo 'Résultats :<br>'.$addition.'<br>'.$multi.'<br>'.$division.'<br>';
 				?>
 			</article>

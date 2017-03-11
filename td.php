@@ -73,60 +73,60 @@
 	</nav>
 	<section>
 		<article>
-		<h2>Veuillez choisir un mois et une année :</h2>
-		<form method="get" action="td.php">
-			<label for="mois">Mois</label>
-			<SELECT name="month" id="mois">
-				<option value="1">Janvier</option>
-				<option value="2">Février</option>
-				<option value="3">Mars</option>
-				<option value="4">Avril</option>
-				<option value="5">Mai</option>
-				<option value="6">Juin</option>
-				<option value="7">Juillet</option>
-				<option value="8">Août</option>
-				<option value="9">Septembre</option>
-				<option value="10">Octobre</option>
-				<option value="11">Novembre</option>
-				<option value="12">Décembre</option>
-			</SELECT>
-			<label for="annee">Année</label>
-			<SELECT name="year" id="annee">
+			<h2>Veuillez choisir un mois et une année :</h2>
+			<form method="get" action="td.php">
+				<label for="mois">Mois</label>
+				<SELECT name="month" id="mois">
+					<option value="1">Janvier</option>
+					<option value="2">Février</option>
+					<option value="3">Mars</option>
+					<option value="4">Avril</option>
+					<option value="5">Mai</option>
+					<option value="6">Juin</option>
+					<option value="7">Juillet</option>
+					<option value="8">Août</option>
+					<option value="9">Septembre</option>
+					<option value="10">Octobre</option>
+					<option value="11">Novembre</option>
+					<option value="12">Décembre</option>
+				</SELECT>
+				<label for="annee">Année</label>
+				<SELECT name="year" id="annee">
 				<?php 
 					//Liste année
 					for ($i=2000; $i <= 2100 ; $i++) { 
 						echo '<option value="'.$i.'">'.$i.'</option>';
 					}
 				?>
-			</SELECT>
-			<button type="submit">Envoi</button>
-		</form>
+				</SELECT>
+				<button type="submit">Envoi</button>
+			</form>
 		
-		<table>
-		<tr>
-			<td colspan="7"><?= $calendrier->format('M-Y')?></td>
-		</tr>
-		<tr>
-			<td>Lu</td>
-			<td>Ma</td>
-			<td>Me</td>
-			<td>Je</td>
-			<td>Ve</td>
-			<td>Sa</td>
-			<td>Di</td>
-		</tr>
-		<?php
-			//Affichage calendrier
-			for ($semaine=0; $semaine <=5 ; $semaine++) { 
-				echo "<tr>";
-				for ($jour=0; $jour <=6 ; $jour++) { 
-					echo "<td>".$numerosDuMois[$numTour]."</td>";
-					$numTour++;
+			<table>
+				<tr>
+					<td colspan="7"><?= $calendrier->format('M-Y')?></td>
+				</tr>
+				<tr>
+					<td>Lu</td>
+					<td>Ma</td>
+					<td>Me</td>
+					<td>Je</td>
+					<td>Ve</td>
+					<td>Sa</td>
+					<td>Di</td>
+				</tr>
+			<?php
+				//Affichage calendrier
+				for ($semaine=0; $semaine <=5 ; $semaine++) { 
+					echo "<tr>";
+					for ($jour=0; $jour <=6 ; $jour++) { 
+						echo "<td>".$numerosDuMois[$numTour]."</td>";
+						$numTour++;
+					}
+					echo "</tr>";
 				}
-				echo "</tr>";
-			}
-		?>
-		</table>
+			?>
+			</table>
 		</article>
 	</section>
 </body>

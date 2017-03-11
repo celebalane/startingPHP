@@ -33,7 +33,7 @@
 			<a href="parametre/exercice3.php?dateDebut=2/05/2016&dateFin=27/11/2016">Résultat</a>
 		</article>
 		<article>
-			<h12>Exercice 4</h2>
+			<h2>Exercice 4</h2>
 			<a href="parametre/exercice4.php?langage=PHP&serveur=LAMP">Résultat</a>
 		</article>
 		<article>
@@ -42,8 +42,8 @@
 		</article>
 		<article>
 			<h2>Exercice 6</h2>
-			<a href="parametre/exercice6.php?batiment=12&salle=101">Résultat</a>
-			<a href="parametre/exercice6.php?batiment=<script>alert(‘lol’)</script>&salle=101">Résultat</a>
+			<a href="parametre/exercice6.php?batiment=12&salle=101">1.Résultat</a>
+			<a href="parametre/exercice6.php?batiment=<script>alert(‘lol’)</script>&salle=101">2.Résultat</a>
 		</article>
 	</section>
 </body>

@@ -10,8 +10,6 @@
 	}else{
 		$resultat2 = 'il y a une erreur';
 	}
-
-
 ?>
 
 <!DOCTYPE html>

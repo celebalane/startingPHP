@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #8892bf;
   color: #333333;
@@ -14,6 +15,7 @@ nav {
   margin-left: 5%; }
 
 #nav li {
+  /*Carrés*/
   display: inline-flex;
   justify-content: center;
   list-style: none;
@@ -23,51 +25,62 @@ nav {
   height: 90px; }
 
 #nav #img1 {
+  /*Taille des icones*/
   margin-left: 35%;
+  margin-bottom: 0%;
   width: 30%; }
 
 #nav #img2 {
+  /*Taille des icones*/
   margin-left: 35%;
   margin-bottom: 10%;
   width: 30%; }
 
 #nav #img3 {
+  /*Taille des icones*/
   margin-left: 30%;
   margin-bottom: -8%;
   width: 40%; }
 
 #nav #img4 {
+  /*Taille des icones*/
   margin-left: 30%;
   margin-bottom: -10%;
   width: 30%; }
 
 #nav #img5 {
+  /*Taille des icones*/
   margin-left: 30%;
   margin-bottom: -8%;
   width: 40%; }
 
 #nav #img6 {
+  /*Taille des icones*/
   margin-left: 25%;
-  margin-bottom: 10%;
+  margin-bottom: -16%;
   width: 50%; }
 
 #nav #img7 {
-  padding-top: 5%;
+  /*Taille des icones*/
   margin-left: 25%;
   margin-bottom: 14%;
-  width: 50%; }
+  width: 50%;
+  padding-top: 5%; }
 
 #nav #img8 {
+  /*Taille des icones*/
   margin-left: 25%;
   margin-bottom: -11%;
   width: 50%; }
 
 #nav #img9 {
+  /*Taille des icones*/
   margin-left: 30%;
   margin-bottom: -18%;
   width: 40%; }
 
 #nav #img10 {
+  /*Taille des icones*/
   margin-left: 23%;
   margin-bottom: 8%;
   width: 50%; }

@@ -1,79 +1,65 @@
+$taille_carre:90px;
+
 nav{
 	margin-top:2%;
 	margin-left:5%;
-
 }
 
-#nav li{
+#nav li{                                             /*Carrés*/
 	display: inline-flex;
 	justify-content:center;
 	list-style: none;
 	background-color:#4f5b93;
 	margin:0 0.5% 1% 0.5%;
-	width: 90px;
-	height:90px;
+	width: $taille_carre;
+	height:$taille_carre;
+}
 
+@mixin icone($margin-left,$margin-bottom,$taille){  /*Taille des icones*/
+	margin-left:$margin-left;
+	margin-bottom:$margin-bottom;
+	width:$taille;
 }
 
 #nav #img1{
-	margin-left:35%;
-	width:30%;
-
+	@include icone(35%,0%,30%);
 }
 
 #nav #img2{
-	margin-left:35%;
-	margin-bottom:10%;
-	width:30%;
+	@include icone(35%,10%,30%);
 }
 
 #nav #img3{
-	margin-left:30%;
-	margin-bottom:-8%;
-	width:40%;
+	@include icone(30%,-8%,40%);
 }
 
 #nav #img4{
-	margin-left:30%;
-	margin-bottom:-10%;
-	width:30%;
+	@include icone(30%,-10%,30%);
 }
 
 #nav #img5{
-	margin-left:30%;
-	margin-bottom:-8%;
-	width:40%;
+	@include icone(30%,-8%,40%);
 }
 
 #nav #img6{
-	margin-left:25%;
-	margin-bottom:10%;
-	width:50%;
+	@include icone(25%,-16%,50%);
 }
 
 #nav #img7{
+	@include icone(25%,14%,50%);
 	padding-top:5%;
-	margin-left:25%;
-	margin-bottom:14%;
-	width:50%;
 }
 
 #nav #img8{
-	margin-left:25%;
-	margin-bottom:-11%;
-	width:50%;
+	@include icone(25%,-11%,50%);
 }
 
 #nav #img9{
-	margin-left:30%;
-	margin-bottom:-18%;
-	width:40%;
+	@include icone(30%,-18%,40%);
 }
 
 #nav #img10{
-	margin-left:23%;
-	margin-bottom:8%;
-	width:50%;
+	@include icone(23%,8%,50%);
 }
 
 #nav p {

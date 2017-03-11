@@ -1,7 +1,6 @@
 $color_font:#333333;
 $taille: 50px;
 
-
 body{
 	background-color: #8892bf;
 	color:$color_font;
@@ -29,64 +28,53 @@ nav{
 	margin:0 0.5% 1% 0.5%;
 	width: 17%;
 	height:200px;
+}
 
+@mixin icone($margin-left,$margin-bottom,$taille){  /*Taille des icones*/
+	margin-left:$margin-left;
+	margin-bottom:$margin-bottom;
+	width:$taille;
 }
 
 #nav #img1{
-	margin-left:15%;
+	@include icone(18%,0%,66%);
 }
 
 #nav #img2{
-	margin-left:20%;
-	margin-bottom:17%;
+	@include icone(20%,17%,66%);
 }
 
 #nav #img3{
-	margin-left:30%;
-	margin-bottom:-2%;
-	width:40%;
+	@include icone(30%,-2%,40%);
 }
 
 #nav #img4{
-	margin-left:30%;
-	margin-bottom:20%;
+	@include icone(30%,20%,45.5%);
 }
 
 #nav #img5{
-	margin-left:30%;
-	margin-bottom:-2.5%;
-	width:40%;
+	@include icone(30%,-2.5%,40%);
 }
 
 #nav #img6{
-	margin-left:12%;
-	margin-bottom:21%;
-	width:80%;
+	@include icone(30%,0%,40%);
 }
 
 #nav #img7{
+	@include icone(25%,18%,50%);
 	padding-top:5%;
-	margin-left:25%;
-	margin-bottom:18%;
-	width:50%;
 }
 
 #nav #img8{
-	margin-left:13%;
-	margin-bottom:6%;
-	width:80%;
+	@include icone(13%,6%,80%);
 }
 
 #nav #img9{
-	margin-left:30%;
-	margin-bottom:-2%;
-	width:40%;
+	@include icone(30%,-2%,40%);
 }
 
 #nav #img10{
-	margin-left:7%;
-	margin-bottom:24%;
-	width:80%;
+	@include icone(7%,24%,80%);
 }
 
 #nav p {
@@ -99,22 +87,4 @@ nav{
 	color:white;
 }
 
-article{
-	background-color:#F2F2F2;
-	margin:4% auto 2% auto;
-	padding: 1%;
-	width:50%;
-}
 
-table{
-	margin-top: 4%;
-	margin-left:auto;
-	margin-right:auto;
-	td{
-		background-color:white;
-		border: solid 1px #C6C8C8;
-		text-align: center;
-		height:$taille;
-		width: $taille;
-	}
-}
